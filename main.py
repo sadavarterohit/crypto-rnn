@@ -27,6 +27,8 @@ tf.app.flags.DEFINE_float("dropout", 1.0, "Dropout for the last (full-connected)
 tf.app.flags.DEFINE_float("lr", 5e-4, "Learning rate (alpha) for the model")
 tf.app.flags.DEFINE_string("cipher", "vigenere", 'Type of cipher to solve. One of "vigenere", "autokey", or "enigma"')
 tf.app.flags.DEFINE_string("A", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Alphabet to use for polyalphabetic cipher")
+tf.app.flags.DEFINE_string("meta_dir", "", 'META_DIR')
+tf.app.flags.DEFINE_string("save_dir", "", 'META_DIR')
 FLAGS = tf.app.flags.FLAGS
 
 ##### interpret user input #####
